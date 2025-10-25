@@ -1,0 +1,779 @@
+body {
+
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/*NAVIGATION BAR*/
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#logo a img {
+    height: 1.8rem;
+    margin-left: 1rem;
+}
+
+.nav-bar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0%;
+    padding: 0%; */
+    width: 100%;
+    border-bottom: 1px solid white;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+
+#nav-options ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+
+}
+
+#nav-options ul li {
+    font-weight: medium;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nav-options ul li a:hover {
+    color: #ccff00;
+}
+
+#select {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 9rem;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#select option:hover {
+    color: #ccff00;
+}
+
+#language-options {
+    width: 3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+#language-options:hover {
+    color: #ccff00;
+}
+
+#login {
+    width: 8rem;
+    border: 0.1rem solid #ccff00;
+    border-radius: 2rem;
+    background-color: black;
+    color: white;
+    height: 3rem;
+}
+
+#login:hover {
+    color: #ccff00dd;
+    cursor: pointer;
+}
+
+#signup {
+    width: 8rem;
+    border: 0.1rem solid #ccff00;
+    border-radius: 2rem;
+    background-color: #ccff00;
+    color: rgb(0, 0, 0);
+    height: 3rem;
+}
+
+#signup:hover {
+    background-color: rgba(204, 255, 0, 0.8);
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    display: none;
+}
+
+@media screen and (max-width: 1279px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #nav-options {
+        display: none;
+    }
+
+    .material-symbols-outlined {
+        width: 10px;
+        height: 5px;
+        background-color: black;
+        border-top: white solid 2px;
+    }
+
+    /*FIRST SLIDE
+-------------------------------------------------------------*/
+}
+
+#first-slide {
+    position: relative;
+    height: auto;
+    width: 100%;
+
+}
+
+.bgvdo {
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    top: -170px;
+    left: -100px;
+
+}
+
+#first-slide h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(rgb(148, 129, 76) 0%, rgb(207, 185, 125) 100%) text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+#first-slide h3 {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 125px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#first-slide h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15.5px;
+    font-weight: normal;
+}
+
+#first-slide h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(155, 155, 155);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#first-slide button {
+    height: 45px;
+    width: 115px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.left {
+    margin-left: 230px;
+}
+
+/*SECOND SLIDE
+--------------------------------------------------------------*/
+#second-slide {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 400px;
+    background-image: url("https://images.ctfassets.net/ilblxxee70tt/72AW6WOPCImTemmsfDxVFk/276b95a7314a0d484a27f3f51cc47a82/web_homepage_investing_2.jpeg");
+    background-size: cover;
+}
+
+.right {
+    margin-left: 800px;
+}
+
+#second-slide h2 {
+    padding-top: 300px;
+    font-weight: lighter;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.firstline {
+    color: #ccff00;
+}
+
+#second-slide #para2 {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+#second-slide button {
+    height: 45px;
+    width: 115px;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #ccff00;
+    border-width: 0.2px;
+    border-color: #ccff00;
+}
+
+#second-slide #para3 {
+    padding-top: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(181, 179, 179);
+}
+
+/*THIRD SLIDE
+----------------------------------------------------*/
+
+#third-slide {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 400px;
+    background-image: url("https://images.ctfassets.net/ilblxxee70tt/2zqFBs1Dk1ZFLa68vgaCUM/ae93f6273da3b74ae09899a4cdcee75e/wide_crypto_hero_4k_test_2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+#third-slide h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-top: 15rem;
+    font-size: 2.5rem;
+
+}
+
+#third-slide h5 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+
+#third-slide #cryptorisk {
+    color: rgba(71, 69, 69, 0.8);
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+#third-slide button {
+    height: 2.5rem;
+    width: 115px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+
+}
+
+#third-slide #cryptooffer {
+    color: black;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+
+}
+
+/*FOURTH SLIDE
+-----------------------------------------------------*/
+
+#fourth-slide {
+    background-image: url("https://images.ctfassets.net/ilblxxee70tt/2IeGSELP82mOWLNZHSE5R5/2dd98fffc51573df6d68de384a175435/RH25_Strategiespromo_wide_homepage_hero.jpeg");
+    height: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    top: 23rem;
+
+}
+
+#fourth-slide h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-top: 15rem;
+    font-size: 2.5rem;
+}
+
+#fourth-slide h4 {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
+
+#fourth-slide button {
+    height: 2.5rem;
+    width: 14rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: #ccff00;
+    border-width: 0.1px;
+    border-color: #ccff00;
+}
+
+#fourth-slide h6 {
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-top: 10rem;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+    color: black;
+
+}
+
+/*FIFTH SLIDE
+-------------------------------------------------*/
+
+#fifth-slide {
+    background-color: rgb(30, 26, 14);
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+
+#fifth-slide h1 {
+    color: white;
+    font-size: 3rem;
+    padding-top: 400px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+#fifth-slide button {
+    height: 2.6rem;
+    width: 22rem;
+    text-align: center;
+    background-color: rgb(30, 26, 14);
+    color: white;
+    border-radius: 50px;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: white;
+
+}
+
+#images1 {
+    padding-top: 6rem;
+    display: flex;
+    gap: 9rem;
+    justify-content: center;
+
+}
+
+#fifth-slide h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+#lines1 {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+#images2 {
+    padding-top: 6rem;
+    display: flex;
+    gap: 9rem;
+    justify-content: center;
+}
+
+#lines2 {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding-bottom: 9rem;
+}
+
+/*SIXTH SLIDE
+---------------------------------------*/
+
+#sixth-slide {
+    background-color: #ccff00;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+#sixth-slide h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 3rem;
+    color: black;
+}
+
+#sixth-slide h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+#sixthslidebutton {
+    display: flex;
+    justify-content: center;
+}
+
+#sixth-slide button {
+    height: 2.6rem;
+    width: 22rem;
+    text-align: center;
+    background-color: rgb(30, 26, 14);
+    color: white;
+    border-radius: 50px;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+}
+
+#sixth-slide #investor {
+    position: relative;
+    left: 34rem;
+    width: 27rem;
+    height: 20rem;
+    padding-top: 4rem;
+
+}
+
+/*SEVENTH SLIDE
+------------------------------------------*/
+#seventh-slide {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+#seventh-slide .bgvdo2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+#seventh-slide h1 {
+    position: absolute;
+    top: 14rem;
+    right: 27rem;
+    font-size: 4.5rem;
+    font-weight: normal;
+}
+
+#seventh-slide button {
+
+    position: absolute;
+    top: 30rem;
+    right: 41rem;
+    font-size: 1rem;
+    font-weight: normal;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 50px;
+    background-color: #ccff00;
+    border-width: 0.2px;
+    border-color: #ccff00;
+}
+
+/*EIGHTH SLIDE
+--------------------------------------*/
+#eighth-slide {
+    background-color: #ccff00;
+    height: auto;
+    width: 100%;
+}
+
+#eighth-slide #top-part {
+    display: flex;
+    border-bottom: 2px;
+    border-color: gray;
+    height: auto;
+}
+
+#link1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+#link1 a {
+    color: black;
+    text-decoration: underline;
+}
+
+#link2 a {
+    color: black;
+    text-decoration: underline;
+}
+
+#divider {
+    padding-top: 1.5rem;
+    color: black;
+    padding-left: 1rem;
+    font-size: 2rem;
+    top: -8rem;
+}
+
+#link2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.2rem;
+}
+
+#followus {
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
+    padding-left: 25rem;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+
+}
+
+/* BOTTOM PART
+#bottom-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    justify-content: space-evenly;
+}
+
+
+#firstlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#firstlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#secondlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#secondlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#thirdlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#thirdlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+#fourthlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#fourthlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#fourthlist ul li {
+    margin-top: 1rem;
+    font-size: 1rem;
+    word-spacing: 1%;
+}
+
+#alogodiv {
+    width: 100%;
+}
+
+#alogo {
+    width: 100%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14rem;
+    color: #000000;
+}
+
+#top-part {
+    display: none;
+} */
+
+.amaincontents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    justify-content: space-evenly;
+}
+
+
+#afirstlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#afirstlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#asecondlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#asecondlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#athirdlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#athirdlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#afourthlist ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#afourthlist ul li {
+    margin-top: 1rem;
+    font-size: 1rem;
+    word-spacing: 1%;
+}
+
+#afourthlistheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#alogodiv {
+    width: 100%;
+}
+
+#alogo {
+    width: 100%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14rem;
+    color: #000000;
+}
+
+#astopbar {
+    display: none;
+}
