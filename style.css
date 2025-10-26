@@ -22,6 +22,7 @@ a {
 }
 
 .nav-bar {
+
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -112,8 +113,12 @@ a {
     display: none;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 960px) {
     body {
+        overflow-x: hidden;
+    }
+
+    .nav-bar {
         width: 100%;
         overflow-x: hidden;
     }
@@ -122,16 +127,44 @@ a {
         display: none;
     }
 
-    .material-symbols-outlined {
-        width: 10px;
-        height: 5px;
-        background-color: black;
-        border-top: white solid 2px;
+    #select {
+        display: none;
     }
 
-    /*FIRST SLIDE
--------------------------------------------------------------*/
+    .material-symbols-outlined {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #login {
+        display: none;
+    }
 }
+
+
+@media screen and (max-width: 650px) {
+    body {
+        overflow-x: hidden;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    #language {
+        display: none;
+    }
+
+    #signup {
+        height: 2rem;
+
+    }
+}
+
+/*FIRST SLIDE
+-------------------------------------------------------------*/
 
 #first-slide {
     position: relative;
@@ -189,11 +222,60 @@ a {
     margin-left: 230px;
 }
 
+@media screen and (max-width: 650px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #first-slide {
+        height: 50rem;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .bgvdo {
+        /* height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 30%; */
+        display: none;
+
+    }
+
+    #first-slide h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 4%;
+    }
+
+    #first-slide h3 {
+        text-align: center;
+        margin-left: 4%;
+
+    }
+
+    #first-slide h5 {
+        text-align: center;
+        margin-left: 4%;
+    }
+
+    #first-slide h6 {
+        margin-left: 4%;
+    }
+
+    #first-slide button {
+        margin-left: 4%;
+    }
+}
+
 /*SECOND SLIDE
---------------------------------------------------------------*/
+------------------------------------------------------------*/
 #second-slide {
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
     top: 400px;
     background-image: url("https://images.ctfassets.net/ilblxxee70tt/72AW6WOPCImTemmsfDxVFk/276b95a7314a0d484a27f3f51cc47a82/web_homepage_investing_2.jpeg");
@@ -207,7 +289,7 @@ a {
 #second-slide h2 {
     padding-top: 300px;
     font-weight: lighter;
-    font-size: 40px;
+    font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -232,11 +314,42 @@ a {
 }
 
 #second-slide #para3 {
-    padding-top: 5rem;
+    padding-top: 8rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 13px;
     font-weight: normal;
     color: rgb(181, 179, 179);
+}
+
+@media screen and (max-width:650px) {
+    #second-slide {
+        position: relative;
+        background-image: url("https://images.ctfassets.net/ilblxxee70tt/1jvtb9LgLK7amOfYSgNVk7/d1504fdcb9be25bfa5142ee1481b9f32/mobile_homepage_investing_4x.jpeg");
+        width: auto;
+        background-color: blue;
+        top: -15%;
+        height: auto;
+
+    }
+
+    #second-slide h2 {
+        padding-top: 0%;
+        margin-left: 5%;
+        font-size: 2rem;
+    }
+
+    #para2 {
+        margin-left: 5%;
+    }
+
+    #para3 {
+        margin-left: 5%;
+        margin-top: 90%;
+    }
+
+    #second-slide button {
+        margin-left: 5%;
+    }
 }
 
 /*THIRD SLIDE
@@ -298,6 +411,38 @@ a {
 
 }
 
+@media screen and (max-width:650px) {
+    #third-slide {
+        background-image: url("https://images.ctfassets.net/ilblxxee70tt/2CVYPS74M1LraWI2D2T9uy/74a08f71e328db2b159225daf98eef65/tablet_crypto_hero.jpeg");
+        top: -10%;
+        background-size: cover;
+
+    }
+
+    #third-slide h2 {
+        margin-left: 5%;
+        font-size: 2.2rem;
+        padding-top: 3rem;
+    }
+
+    #third-slide h5 {
+        margin-left: 5%;
+    }
+
+    #third-slide #cryptorisk {
+        margin-left: 5%;
+    }
+
+    #third-slide button {
+        margin-left: 5%;
+    }
+
+    #third-slide #cryptooffer {
+        margin-left: 5%;
+        margin-top: 15rem;
+    }
+}
+
 /*FOURTH SLIDE
 -----------------------------------------------------*/
 
@@ -347,9 +492,38 @@ a {
 
 }
 
-/*FIFTH SLIDE
--------------------------------------------------*/
+@media screen and (max-width:650px) {
+    #fourth-slide {
+        background-image: url("https://images.ctfassets.net/ilblxxee70tt/4FRVAk1txyr2Lp9VLyPOoE/da3a2101737f427d91be3cb3ba880cf9/RH25_Strategiespromo_tablet_homepage_hero.jpeg");
+        padding-top: 0%;
+        position: relative;
+        width: auto;
+        top: -15%;
+        height: auto;
 
+    }
+
+    #fourth-slide h2 {
+        margin-left: 5%;
+        font-size: 2.2rem;
+        padding-top: 5%;
+    }
+
+    #fourth-slide h4 {
+        margin-left: 5%;
+    }
+
+    #fourth-slide button {
+        margin-left: 5%;
+    }
+
+    #fourth-slide h6 {
+        margin-top: 15rem;
+        margin-left: 5%;
+    }
+}
+
+/*FIFTH SLIDE*/
 #fifth-slide {
     background-color: rgb(30, 26, 14);
     width: 100%;
@@ -416,6 +590,22 @@ a {
     padding-bottom: 9rem;
 }
 
+@media screen and (max-width:650px) {
+    #fifth-slide {
+        padding-top: 0%;
+        position: relative;
+        width: auto;
+        top: -15%;
+        height: auto;
+    }
+
+    #fifth-slide h1 {
+        margin-left: 5%;
+        font-size: 2.2rem;
+        padding-top: 5%;
+    }
+}
+
 /*SIXTH SLIDE
 ---------------------------------------*/
 
@@ -470,9 +660,31 @@ a {
 
 }
 
+@media screen and (max-width:650px) {
+    #sixth-slide {
+        padding-top: 0%;
+        position: relative;
+        width: auto;
+        top: -15%;
+        height: 800px;
+    }
+
+    #sixth-slide #investor {
+        transform: translateX(-50%); 
+        width: auto;
+        height: 20rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        position: relative;
+        left:50%;
+        
+
+    }
+}
+
 /*SEVENTH SLIDE
 ------------------------------------------*/
-#seventh-slide {
+/* #seventh-slide {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -510,6 +722,88 @@ a {
     border-width: 0.2px;
     border-color: #ccff00;
 }
+
+@media screen and (max-width:650px) {
+    #seventh-slide {
+        width: auto;
+        position: relative;
+        height: auto;
+    }
+
+    #seventh-slide .bgvdo2 {
+        width: auto;
+        height: 1000px;
+        object-fit: cover;
+    }
+
+    #seventh-slide h1 {
+        position: absolute;
+      
+        font-size: 2rem;
+        font-weight: normal;
+        text-align: center;
+    }
+} */
+
+ #seventh-slide {
+  position: relative;
+  width: 100%;
+  height: 800px; /* full screen height */
+  overflow: hidden;
+}
+
+#seventh-slide .bgvdo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+}
+
+#seventh-slide h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+#seventh-slide button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #cfff04; /* Robinhood-like neon */
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile adjustments */
+@media screen and (max-width: 650px) {
+  #seventh-slide {
+    height: 800px;
+  }
+
+  #seventh-slide h1 {
+    font-size: 3rem;
+    width: 90%;
+  }
+
+  #seventh-slide button {
+    top: 60%;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
 
 /*EIGHTH SLIDE
 --------------------------------------*/
@@ -566,111 +860,7 @@ a {
 
 }
 
-/* BOTTOM PART
-#bottom-part{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
-    justify-content: space-evenly;
-}
-
-
-#firstlist ul {
-    color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    list-style: none;
-    line-height: 2rem;
-    margin-top: 2rem;
-}
-
-#firstlistheading {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 2.4rem;
-    margin-top: 2rem;
-    color: #000000;
-}
-
-#secondlist ul {
-    color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    list-style: none;
-    line-height: 2rem;
-    margin-top: 2rem;
-}
-
-#secondlistheading {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 2.4rem;
-    margin-top: 2rem;
-    color: #000000;
-}
-
-#thirdlist ul {
-    color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    list-style: none;
-    line-height: 2rem;
-    margin-top: 2rem;
-}
-
-#thirdlistheading {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 2.4rem;
-    margin-top: 2rem;
-    color: #000000;
-}
-#fourthlistheading {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 2.4rem;
-    margin-top: 2rem;
-    color: #000000;
-}
-
-#fourthlist ul {
-    color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    list-style: none;
-    line-height: 2rem;
-    margin-top: 2rem;
-}
-
-#fourthlist ul li {
-    margin-top: 1rem;
-    font-size: 1rem;
-    word-spacing: 1%;
-}
-
-#alogodiv {
-    width: 100%;
-}
-
-#alogo {
-    width: 100%;
-    margin: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 14rem;
-    color: #000000;
-}
-
-#top-part {
-    display: none;
-} */
+/* BOTTOM PART*/
 
 .amaincontents {
     display: grid;
@@ -774,6 +964,48 @@ a {
     color: #000000;
 }
 
-#astopbar {
-    display: none;
+@media screen and (max-width: 650px) {
+    #top-part{
+        display: none;
+    }
+
+    #astopbar {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #lstopbar {
+        color: #000000;
+    }
+
+    .amaincontents {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #afirstlist,
+    #asecondlist,
+    #athirdlist,
+    #afourthlist {
+        margin: 0;
+        padding: 0;
+    }
+
+    #afirstlist ul,
+    #asecondlist ul,
+    #athirdlist ul,
+    #afourthlist ul {
+        padding: 0;
+        line-height: 1.8rem;
+    }
+
+    #afourthlist ul li {
+        font-size: 0.9rem;
+    }
+
+    #alogo {
+        font-size: 4rem;
+        text-align: center;
+    }
 }
